@@ -7,6 +7,22 @@
     <title>Document</title>
 </head>
 <body>
+    <script>
+        //数组去重
+     var arr = [10,50,40,81,10,99,99,30,20,10]
+     
+        var arrNew = []
+        for(var i=0;i<arr.length;i++){
+
+            if(arrNew.indexOf(arr[i]) == -1){
+                arrNew.push(arr[i])
+            }
+        }
+        
+        console.log(arrNew);
+        
+    
+    </script>
     
 </body>
 </html>
