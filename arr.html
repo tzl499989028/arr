@@ -10,7 +10,7 @@
     <script>
         //数组去重
      var arr = [10,50,40,81,10,99,99,30,20,10]
-     
+     // 用indexof 对比
         var arrNew = []
         for(var i=0;i<arr.length;i++){
 
@@ -21,7 +21,7 @@
         
         console.log(arrNew);
 
-
+     
          var arrNew = []
          var arr = arr.sort()
 
@@ -34,7 +34,7 @@
 
         console.log(arrNew);
         
-    
+    //下标对比
        var arrNew = []
        for(var i = 0;i<arr.length;i++){
            if(arr.indexOf(arr[i]) == i){
@@ -44,6 +44,22 @@
 
         console.log(arrNew);
         
+
+    // 前后对比
+
+        var arr = [10,50,40,81,10,99,99,30,20,10]
+
+        var arr = arr.sort()
+        
+      for(var i = 0 ; i<arr.length;i++){
+          if(arr[i] == arr[i+1]){
+              arr.splice(i,1)
+              i--
+          }
+      }
+
+          console.log(arr);
+          
     </script>
     
 </body>
